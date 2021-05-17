@@ -18,7 +18,7 @@ The dataset includes:
 	    
     
     Only the player is annotated
-    2 types of modality : Freekick and penalty.
+    2 types of modality : Freekick and Penalty.
     
     Dictionary results at time t saved to pickle file. Given N is the number of frames and B batch size referring to the number of people:
 
