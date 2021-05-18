@@ -8,9 +8,9 @@ To predict the location of body joints in 3D space from monocular inputs videos,
 
 To evaluate the prediction we compute the average *l2 norm* on the 2D keypoints coordinates estimated for each joint given AlphaPose and OpenPose. And, we adapted the PCK (the Percentage of Correct Key-points measures the distance between the ground-truth joint location and the predicted joint location) metric from Human Pose Estimation models to compare the results of the 3D joints per frame outputs from HMMR-Alphapose and HMMR-OpenPose.
 
-# Download
+# Dataset Download
 
-The entire contents of the dataset can be accessed through the [link](https://drive.google.com/drive/folders/1RS93v-QE8jQ-6NFTGu4gwx_-5xYsWona?usp=sharing).
+The entire contents of the dataset can be accessed through the **[link](https://drive.google.com/drive/folders/1RS93v-QE8jQ-6NFTGu4gwx_-5xYsWona?usp=sharing)**.
 
 # Dataset content
 
@@ -139,5 +139,9 @@ Dataset hierarchy for each video:
 # License
 
 The SoccerKicks dataset is licensed under the Creative Commons Zero v1.0 Universal, and the underlying source code used to format and display that content is licensed under the MIT license.
+
+# Authors
+
+Nayari Lessa, Esther Colombini and Alexandre Simões
 
 # Citation
