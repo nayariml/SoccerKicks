@@ -10,9 +10,7 @@ To evaluate the prediction we compute the average *l2 norm* on the 2D keypoints 
 
 # Download
 
-The entire contents of the dataset can be accessed through the link: 
-
-https://drive.google.com/drive/folders/1RS93v-QE8jQ-6NFTGu4gwx_-5xYsWona?usp=sharing
+The entire contents of the dataset can be accessed through the [link](https://drive.google.com/drive/folders/1RS93v-QE8jQ-6NFTGu4gwx_-5xYsWona?usp=sharing).
 
 # Dataset content
 
