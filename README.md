@@ -1,27 +1,39 @@
 # SoccerKicks
 
+The SoccerKicks dataset provides 3D guide movements for dead ball kicks (penalty and foul) obtained from reference videos suitable for use in the robotics soccer domain.
+
+To predict the location of body joints in 3D space from monocular inputs videos, we employ the Kanazawa et al. approach [HMMR](https://github.com/akanazawa/human_dynamics). We modified the HMMR system to estimate 3D poses from 2D poses provided by different 2D Human Pose Estimation models: [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose) and [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
+
+
+
+To evaluate the prediction we compute the average *l2 norm* on the 2D keypoints coordinates estimated for each joint given AlphaPose and OpenPose. And, we adapted the PCK (the Percentage of Correct Key-points measures the distance between the ground-truth joint location and the predicted joint location) metric from Human Pose Estimation models to compare the results of the 3D joints per frame outputs from HMMR-Alphapose and HMMR-OpenPose.
+
+
+# Download
+
 The entire contents of the dataset can be accessed through the link: 
 
 https://drive.google.com/drive/folders/1RS93v-QE8jQ-6NFTGu4gwx_-5xYsWona?usp=sharing
 
-The dataset includes:
+# Dataset content
+
+The SoccerKicks dataset contain 38 videos with the annotations as described below:
 
     Video clips 
     Rendered video clips, 2D and 3D
-    2D pose annotations: Alphapose and OpenPose
-    3D poses annotations: Human Mesh and Motion Recovery (HMMR) system. 
+    2D pose annotations for Alphapose and OpenPose system
+    3D poses annotations for Human Mesh and Motion Recovery (HMMR) system. 
     General annotations: 
     	2D_kps_info.csv
     	3D_joints_info.csv
     	dataset_evaluation.csv
-    	video_source.csv
-	    
+    	video_source.csv    
+      
     
-    Only the player is annotated
-    2 types of modality : Freekick and Penalty.
+    The 2D keypoints and the 3D joints location and orientation, saved in JSON files.
+    Results from the HMMR system saved as pickle file:
     
-    Dictionary results at time t saved to pickle file. Given N is the number of frames and B batch size referring to the number of people:
-
+    
     'hmmr_output.pkl' coutain: { cams : N x 3 predicted camera, cams is 3D [s, tx, ty],
 			    joints: Nx25x3 3D skeleton, refers to the 3D joint locations of the 25 keypoints,
 			    kps :  N x 25 x 2 is a 2D projection, 
@@ -29,9 +41,10 @@ The dataset includes:
 			    shapes, N x 10 shape is 10D shape coefficients of SMPL,
 			    verts: N x 6890 x 3 - 3D vertices of the mesh,
 			    omegas: (Bx85): [cams, poses, shapes] }
+	*N is the number of frames and B referring to the number of people.
 
-Dataset files:			    
-
+Dataset hierarchy for each video:			    
+	
 	id_action: 
 
 	   annotations:
@@ -127,6 +140,9 @@ Dataset files:
 		frame0000001.png
 		frame0000002.png
 		 ...
+
 # License
 
-The content of this project itself is licensed under the Creative Commons Zero v1.0 Universal, and the underlying source code used to format and display that content is licensed under the MIT license.
+The SoccerKicks dataset is licensed under the Creative Commons Zero v1.0 Universal, and the underlying source code used to format and display that content is licensed under the MIT license.
+
+# Citation
