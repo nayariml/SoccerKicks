@@ -16,10 +16,11 @@ The entire contents of the dataset can be accessed through the **[link](https://
 
 The SoccerKicks dataset contain 38 videos with the annotations as described below:
 
-    Video clips 
-    Rendered video clips, 2D and 3D
-    2D pose annotations for Alphapose and OpenPose system
-    3D poses annotations for Human Mesh and Motion Recovery (HMMR) system. 
+    VideoClips 
+    Rendered:
+	    video clips rendered with 2D and 3D pose estimation
+	    2D pose annotations for Alphapose and OpenPose system
+	    3D poses annotations for Human Mesh and Motion Recovery (HMMR) system. 
     General annotations: 
     	2D_kps_info.csv
     	3D_joints_info.csv
