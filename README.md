@@ -26,12 +26,10 @@ The SoccerKicks dataset contain 38 videos with the annotations as described belo
     	2D_kps_info.csv
     	3D_joints_info.csv
     	dataset_evaluation.csv
-    	video_source.csv    
-      
+    	video_source.csv          
     
     The 2D keypoints and the 3D joints location and orientation, saved in JSON files.
-    Results from the HMMR system saved as pickle file:
-    
+    Results from the HMMR system saved as pickle file:    
     
     'hmmr_output.pkl' coutain: { cams : N x 3 predicted camera, cams is 3D [s, tx, ty],
 			    joints: Nx25x3 3D skeleton, refers to the 3D joint locations of the 25 keypoints,
