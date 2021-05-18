@@ -4,10 +4,9 @@ The SoccerKicks dataset provides 3D guide movements for dead ball kicks (penalty
 
 To predict the location of body joints in 3D space from monocular inputs videos, we employ the Kanazawa et al. approach [HMMR](https://github.com/akanazawa/human_dynamics). We modified the HMMR system to estimate 3D poses from 2D poses provided by different 2D Human Pose Estimation models: [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose) and [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
 
-
+![Schematic_overview](/overview/Diagram.png)
 
 To evaluate the prediction we compute the average *l2 norm* on the 2D keypoints coordinates estimated for each joint given AlphaPose and OpenPose. And, we adapted the PCK (the Percentage of Correct Key-points measures the distance between the ground-truth joint location and the predicted joint location) metric from Human Pose Estimation models to compare the results of the 3D joints per frame outputs from HMMR-Alphapose and HMMR-OpenPose.
-
 
 # Download
 
