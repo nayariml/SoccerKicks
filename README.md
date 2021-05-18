@@ -127,3 +127,6 @@ Dataset files:
 		frame0000001.png
 		frame0000002.png
 		 ...
+#License
+
+The content of this project itself is licensed under the Creative Commons Zero v1.0 Universal, and the underlying source code used to format and display that content is licensed under the MIT license.
