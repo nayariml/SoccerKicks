@@ -6,7 +6,10 @@ To predict the location of body joints in 3D space from monocular inputs videos,
 
 ![Schematic_overview](/overview/Diagram.png)
 
-![gif](/overview/ezgif.com-gif-maker(6)(1)-min.gif)
+![gif](/overview/gif_over.gif)
+
+### Evaluation
+
 To evaluate the prediction we compute the average *l2 norm* on the 2D keypoints coordinates estimated for each joint given AlphaPose and OpenPose. And, we adapted the PCK (the Percentage of Correct Key-points measures the distance between the ground-truth joint location and the predicted joint location) metric from Human Pose Estimation models to compare the results of the 3D joints per frame outputs from HMMR-Alphapose and HMMR-OpenPose.
 
 # Dataset Download
