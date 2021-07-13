@@ -1,36 +1,17 @@
-"""
-#####################
-
-Pickle load: 
-
-all_kps = preds['kps']
-joints = preds ['joints'] #image coordinates
-poses= preds['poses']
-cams= preds['cams']
-verts = preds['verts']
-shapes = preds['shapes']
-omegas = preds['omegas']
-
-dictionary increased '_delta' is the results from time t to t+1
-#####################
-"""
 
 #Alphapose output
 Alpha2Dkps = {
-    0: "Nose", 1: "LEye", 2: "REye",  3: "LEar", 4: "REar",
-    5: "LShoulder", 6: "RShoulder", 7: "LElbow", 8: "RElbow", 9: "LWrist",
-    10:"RWrist", 11:"LHip", 12:"RHip", 13:"LKnee", 14:"RKnee",15:"LAnkle",
-    16:"RAnkle", 17:"Head", 18: "Neck", 19:"Hip", 20:"LBigToe",
+    0: "Nose", 1: "LEye", 2: "REye",  3: "LEar", 4: "REar", 5: "LShoulder", 6: "RShoulder",
+    7: "LElbow", 8: "RElbow", 9: "LWrist", 10:"RWrist", 11:"LHip", 12:"RHip", 13:"LKnee",
+    14:"RKnee",15:"LAnkle", 16:"RAnkle", 17:"Head", 18: "Neck", 19:"Hip", 20:"LBigToe",
     21:"RBigToe", 22:"LSmallToe", 23:"RSmallToe", 24:"LHeel", 25: "RHeel"
 }
 
 #OpenPose output
 Open2Dkps = {
-    0: "Nose", 1: "Neck", 2: "RShoulder",  3: "RElbow", 4: "RWrist",
-    5: "LShoulder", 6: "LElbow", 7: "LWrist", 8: "MidHip", 9: "RHip",
-    10:"RKnee", 11:"RAnkle", 12:"LHip", 13:"LKnee", 14:"LAnkle",15:"REye",
-    16:"LEye", 17:"REar", 18: "LEar", 19:"LBigToe", 20:"LSmallToe",
-    21:"LHeel", 22:"RBigToe", 23:"RSmallToe", 24:"RHeel"
+    0: "Nose", 1: "Neck", 2: "RShoulder",  3: "RElbow", 4: "RWrist", 5: "LShoulder", 6: "LElbow",
+    7: "LWrist", 8: "MidHip", 9: "RHip", 10:"RKnee", 11:"RAnkle", 12:"LHip", 13:"LKnee", 14:"LAnkle",15:"REye",
+    16:"LEye", 17:"REar", 18: "LEar", 19:"LBigToe", 20:"LSmallToe", 21:"LHeel", 22:"RBigToe", 23:"RSmallToe", 24:"RHeel"
 }
 
 #HMMR output
@@ -41,4 +22,10 @@ hmmr3Djoints= {
     16: 'Right_eye', 17: 'Left_ear', 18: 'Right_ear', 19: 'Left_big_toe', 20: 'Right_big_toe',
     21: 'Left_small_toe', 22: 'Right_small_toe', 23: 'Left_ankle', 24: 'Right_ankle'
 }
-
+#SMPL absolut joint location (3D)
+smpl_joints = {
+    1: 'mid_hip', 2: 'right_hip', 3: 'left_hip', 4: 'spine', 5: 'right_knee', 6: 'left_knee',
+    7: 'chest', 8: 'right_ankle', 9: 'left_ankle', 10: 'thorax', 11: 'right_toe', 12: 'left_toe',
+    13: 'neck', 14: 'right_thorax', 15: 'left_thorax', 16: 'head', 17: 'right_shoulder', 18: 'left_shoulder',
+    19:'right_elbow', 20:'left_elbow', 21: 'right_wrist', 22:'left_wrist', 23: 'right_hand', 24: 'left_hand'
+}
