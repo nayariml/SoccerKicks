@@ -2,9 +2,7 @@
 
 The SoccerKicks dataset provides 3D guide movements for dead ball kicks (penalty and foul) obtained from reference videos suitable for use in the robotics soccer domain.
 
-To predict the location of body joints in 3D space from monocular inputs videos, we employ the Kanazawa et al. approach [HMMR](https://github.com/akanazawa/human_dynamics). We modified the HMMR system to estimate 3D poses from 2D poses provided by different 2D Human Pose Estimation models: [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose) and [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
-
-The modified version of HMMR can be found [here](https://github.com/nayariml/human_dynamics) 
+To predict the location of body joints in 3D space from monocular inputs videos, we employ the Kanazawa et al. approach [HMMR](https://github.com/nayariml/human_dynamics). We modified the HMMR system to estimate 3D poses from 2D poses provided by different 2D Human Pose Estimation models: [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose) and [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
 
 In tools you can find scripts with joint location of skeleton (2D - AlphaPose and OpenPose; 3D - HMMR and SMPL joint), draw the skeleton, to read the files, and evaluate the data.
 
