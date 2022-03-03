@@ -24,8 +24,8 @@ hmmr3Djoints= {
 }
 #SMPL absolut joint location (3D)
 smpl_joints = {
-    0: 'pelvis_root', 1: 'right_hip', 2: 'left_hip', 3: 'torso', 4: 'right_knee', 5: 'left_knee',
-    6: 'spine', 7: 'right_ankle', 8: 'left_ankle', 9: 'chest', 10: 'right_toe', 11: 'left_toe',
-    12: 'neck', 13: 'right_thorax', 14: 'left_thorax', 15: 'head', 16: 'right_shoulder', 17: 'left_shoulder',
-    18:'right_elbow', 19:'left_elbow', 20: 'right_wrist', 21:'left_wrist', 22: 'right_hand', 23: 'left_hand'
+    0: 'pelvis_root', 1: 'left_hip', 2: 'right_hip', 3: 'torso', 4: 'left_knee', 5: 'right_knee',
+    6: 'spine', 7: 'left_ankle', 8: 'right_ankle', 9: 'chest', 10: 'left_toe', 11: 'right_toe',
+    12: 'neck', 13: 'left_thorax', 14: 'right_thorax', 15: 'head', 16: 'left_shoulder', 17: 'right_shoulder',
+    18:'left_elbow', 19:'right_elbow', 20: 'left_wrist', 21:'right_wrist', 22: 'left_hand', 23: 'right_hand'
 }
