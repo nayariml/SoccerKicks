@@ -1,7 +1,7 @@
 """#######################
-    In this code the 3D joint location SMPL is computed to:
+    In this code the 3D joint location SMPL is obtained:
 
-    *Absolute joint location (Global)
+   
 
     Given:
     'poses'  Nx24x3x3 and is a rotation matrices corresponding to the SMPL joint
