@@ -102,7 +102,7 @@ class main(SMPL):
         f.close()
 
         all_kps = preds['kps']
-        joints = preds ['joints'] #image coordinates
+        joints = preds ['joints'] 
         poses= preds['poses']
         cams= preds['cams']
         verts = preds['verts']
